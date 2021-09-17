@@ -43,13 +43,6 @@ nav a{
     text-decoration: none;
 }
 
-main{
-    width: 100%;
-    display: inline-block;
-    margin-left: 10px;
-    margin-right: 10px;
-    
-}
 
 .hero-image {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./hero-code-background.jpg");
@@ -59,7 +52,7 @@ main{
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
-  }
+}
 
 .profilepic{
     border-radius: 50%;
@@ -81,17 +74,85 @@ main{
     color: whitesmoke;
 }
 
-h2{
+main{
+    width: 100%;
+    display: inline-block;
+    margin: 0, auto;
+}
+
+
+.content{
+    width: 77%;
+    float: right;
+    margin: 5px;
+}
+
+.sidebar{
+    width: 20%;
+    float: left;
+    margin: 5px;
+}
+
+.aboutme{
+    height: 200px;
+}
+
+#about-me{
+    border: 2px solid whitesmoke;
+}
+
+.mywork{
+    height: 500px;
+}
+
+#my-work{
+    border: 2px solid whitesmoke;
+}
+
+.contactme{
+    height: 75px;
+}
+
+#contact-me{
+    border: 2px solid whitesmoke;
+}
+
+h3{
     font-size: 25px;
+    margin: 0, auto;
+    text-align: right;
 }
 
 
 section{
     margin-bottom: 20px;
     padding: 25px;
-    height: fit-content;
     background-color: black;
-    border: 2px solid whitesmoke;
     margin-right: 2.5%;
     margin-left: 2.5%;
+}
+
+p{
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+
+.content ul{
+    list-style-type: none;
+    text-align: right;
+    margin: 0;
+    padding: 0;
+}
+
+.content ul li{
+    display: inline-block;
+    padding: 15px;
+    font-size: 25px;
+}
+
+
+.content ul li a{
+    color: whitesmoke;
+    text-decoration: none;
 }
