@@ -137,6 +137,7 @@ section p{
     display: flex;
     flex-direction: column;
     border: 2px solid whitesmoke;
+    padding: 1%;
 }
 
 .card{
@@ -158,6 +159,19 @@ section p{
     text-align: center;
 }
 
+#larger{
+    width: 100%;
+    border: 0;
+}
+
+#larger img{
+    width: 100%;
+}
+
+#larger p{
+    width: 100%;
+}
+
 
 section ul{
     display: flex;
@@ -173,7 +187,7 @@ section ul{
 section ul li{
     
     padding: 2%;
-    font-size: 16px;
+    font-size: 20px;
     line-height: 1.5;
 }
 
@@ -202,6 +216,18 @@ section ul li a{
 
     .container{
         flex-direction: column;
+    }
+
+    #larger{
+        width: 100%;
+    }
+
+    #larger img{
+        width: 235px;
+    }
+
+    #larger p{
+        width: 235px;
     }
     
 }
