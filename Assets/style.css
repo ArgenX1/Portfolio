@@ -13,40 +13,49 @@ header{
     position: fixed;
     display: flex;
     justify-content: space-between;
-    align-items: center;
     width: 100%;
     z-index: 1;
     
 }
 
 h1{
+    display: flex;
+    align-items: center;
     font-size: 25px;
     color: black;
     margin-left: 10px;
-    padding-top: 15px;
+    white-space: normal;
+    width: 20%;
 }
 
 nav ul{
-    padding-top: 15px;
-    margin-right: 30px;
+    margin: 2%;
     font-size: 20px;
     list-style-type: none;
     display: flex;
-    justify-content: space-between;
-    min-width: 300px;
-    margin-left: 25px;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+nav li{
+    padding: 5%;
+    font-size: 25px;
+    line-height: 1.5;
+    white-space: nowrap;
 }
 
 
 nav a{
     color: black;
     text-decoration: none;
+
 }
 
 
 .hero-image {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./hero-code-background.jpg");
-    height: 1000px;
+    height: 500px;
+    width: 100%;
     margin: 0;
     background-position: center;
     background-repeat: no-repeat;
@@ -58,7 +67,7 @@ nav a{
     border-radius: 50%;
     border: 1px solid #ddd;
     padding: 5px;
-    width: 500px;
+    width: 250px;
     position: relative;
     top: 50%;
     left: 50%;
@@ -76,83 +85,76 @@ nav a{
 
 main{
     width: 100%;
-    display: inline-block;
-    margin: 0, auto;
 }
 
 
 .content{
-    width: 77%;
-    float: right;
+    width: 100%;
     margin: 5px;
-}
-
-.sidebar{
-    width: 20%;
-    float: left;
-    margin: 5px;
-}
-
-.aboutme{
-    height: 200px;
-}
-
-#about-me{
-    border: 2px solid whitesmoke;
-}
-
-.mywork{
-    height: 500px;
-}
-
-#my-work{
-    border: 2px solid whitesmoke;
-}
-
-.contactme{
-    height: 75px;
-}
-
-#contact-me{
-    border: 2px solid whitesmoke;
+    display: flex;
+    flex-direction: column;
 }
 
 h3{
     font-size: 25px;
-    margin: 0, auto;
-    text-align: right;
+    margin-left: 5%;
+    
 }
 
 
 section{
+    display: flex;
+    justify-content: space-between;
     margin-bottom: 20px;
-    padding: 25px;
+    padding: 10px;
     background-color: black;
-    margin-right: 2.5%;
-    margin-left: 2.5%;
 }
 
-p{
+section p{
+    font-size: 16px;
+    line-height: 1.5;
+    float: right;
+    width: 75%;
+    border: 2px solid whitesmoke;
+    padding: 25px;
+}
+
+
+section ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    list-style-type: none;
+    float: right;
+    padding: 25px;
+    border: 2px solid whitesmoke;
+    width: 75%;
+}
+
+section ul li{
+    
+    padding: 2%;
     font-size: 16px;
     line-height: 1.5;
 }
 
 
-.content ul{
-    list-style-type: none;
-    text-align: right;
-    margin: 0;
-    padding: 0;
-}
-
-.content ul li{
-    display: inline-block;
-    padding: 15px;
-    font-size: 25px;
-}
-
-
-.content ul li a{
+section ul li a{
     color: whitesmoke;
     text-decoration: none;
+}
+
+@media screen and (max-width: 768px) {
+    section ul{
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: left;
+    }
+
+    nav ul{
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    
 }
