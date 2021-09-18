@@ -5,6 +5,7 @@ body{
     margin: 0;
     height: 100%;
     width: 100%;
+    line-height: 1.5;
 }
 
 header{
@@ -108,6 +109,8 @@ section{
     margin-bottom: 20px;
     padding: 10px;
     background-color: black;
+    flex-wrap: wrap;
+    align-items: center;
 }
 
 section p{
@@ -117,6 +120,42 @@ section p{
     width: 75%;
     border: 2px solid whitesmoke;
     padding: 25px;
+}
+
+.container{
+    border: 2px solid whitesmoke;
+    width: 75%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.projects{
+    display: flex;
+    flex-direction: column;
+    border: 2px solid whitesmoke;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+}
+
+.card img{
+    width: 235px;
+}
+
+.card p{
+    width: 235px;
+    padding: 10px;
+    background-color: grey;
+    color: black;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: center;
 }
 
 
@@ -145,6 +184,10 @@ section ul li a{
 }
 
 @media screen and (max-width: 768px) {
+    section{
+        justify-content: center;
+    }
+    
     section ul{
         flex-direction: column;
         justify-content: flex-start;
@@ -154,7 +197,11 @@ section ul li a{
     nav ul{
         flex-direction: column;
         justify-content: flex-start;
-        align-items: center;
+        align-items: flex-end;
+    }
+
+    .container{
+        flex-direction: column;
     }
     
 }
