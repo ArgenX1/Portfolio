@@ -13,3 +13,9 @@ The page is a get to know me and my work page, clicking the pictures of my proje
 ## Credits
 
 I'd like to thank my study group for helping me out with the flex boxes and screen re-sizing when I was having a hard time understanding those concepts.
+
+## Links
+
+https://argenx1.github.io/Portfolio/
+
+![portfolio-screenshot](Assets\screenshot.jpg)
